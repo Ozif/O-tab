@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="一个简单的桌面插件，web由人工完成，插件部分由ai完成。">
+    <meta name="description" content="由于谷歌浏览器不能设置新建标签页而一时兴起的产物。">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="shortcut icon" href="./icon/icon.ico" type="image/x-icon">
+    <title>O-top</title>
+</head>
+
+<body>
+    <!-- 背景视频 -->
+    <video autoplay muted loop id="bg-video">
+        <source src="./bgvideo/芙宁娜furina.mp4" type="video/mp4">
+    </video>
+
+    <div class="container">
+        <!-- 时间显示 -->
+        <div id="time"></div>
+        <!-- 搜索表单 -->
+        <form class="search-container" action="https://www.bing.com/search" method="GET">
+            <input type="text" id="search-box" name="q" placeholder="输入搜索内容..." autocomplete="off">
+        </form>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

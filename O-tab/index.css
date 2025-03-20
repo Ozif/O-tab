@@ -1,0 +1,73 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* 背景视频样式 */
+#bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    filter: brightness(0.8);
+}
+
+/* 主容器 */
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15vh;
+}
+
+/* 时间显示样式 */
+#time {
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 2.5rem;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 3rem;
+}
+
+/* 搜索框容器 */
+.search-container {
+    width: 600px;
+    max-width: 90%;
+    position: relative;
+}
+
+/* 磨砂效果搜索框 */
+#search-box {
+    width: 100%;
+    padding: 18px 25px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: white;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#search-box::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#search-box:focus {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}

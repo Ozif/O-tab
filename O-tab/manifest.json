@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "O-tab",
+  "version": "1.0",
+  "description": "由于谷歌浏览器不能设置新建标签页而一时兴起的产物；一个简单的桌面插件，web由人工完成，插件部分由ai完成。",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": [
+    "tabs",
+    "storage",
+    "scripting",
+    "webNavigation"
+  ],
+  "icons": {
+    "16": "icon/icon.png"
+  }
+}
